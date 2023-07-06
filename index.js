@@ -6,7 +6,9 @@ const { BookRouter } = require('./Routes/Book.Routes');
 const app = express()
 app.use(express.json())
 app.use(cors())
-
+app.get("/",(req,res)=>{
+res.send("Home Route")
+})
 app.use("/book",BookRouter)
 
 app.listen(process.env.port,async ()=>{
