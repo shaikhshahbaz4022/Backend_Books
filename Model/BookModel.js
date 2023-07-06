@@ -4,8 +4,7 @@ let bookobj = {
     author: String,
     genre: {
         type: String,
-        enum: ["Fiction", "Science", "Comic"],
-        default : "Fiction"
+       
     },
     description: String,
     price: Number
